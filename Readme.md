@@ -28,3 +28,9 @@ vagrant up --provider virtualbox --provision
 The docker_bday.sh script install the docker engine and pull the appropriate images
 
 Have Fun.
+
+## The Challenge
+
+Follow the instructions on the page
+
+https://github.com/docker/docker-birthday-3
