@@ -15,6 +15,10 @@ sudo apt-get update && sudo apt-get dist-upgrade -y
 # install docker
 sudo apt-get purge -y lxc-docker
 sudo apt-get install -y docker-engine
+# install docker-compose from github
+sudo sh -c "curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose"
+sudo chmod +x /usr/local/bin/docker-compose
+
 # create a docker group
 sudo usermod -aG docker vagrant
 # pull docker images
