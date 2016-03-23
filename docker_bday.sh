@@ -18,7 +18,9 @@ sudo apt-get install -y docker-engine
 # install docker-compose from github
 sudo sh -c "curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose"
 sudo chmod +x /usr/local/bin/docker-compose
-
+# install docker-machine
+sudo sh -c "curl -L https://github.com/docker/machine/releases/download/v0.6.0/docker-machine-`uname -s`-`uname -m` > /usr/local/bin/docker-machine"
+sudo chmod +x /usr/local/bin/docker-machine
 # create a docker group
 sudo usermod -aG docker vagrant
 # pull docker images
